@@ -1,1 +1,268 @@
 
+{
+		'gameIdentification': {
+			'gameId': '001',
+			'name': 'Education Quizzes',
+			'Locale': 'en-UG'
+		},
+		'goals': [
+			{
+				'id': '001',
+				'numberOfLevelsToComplete': 1,
+				'reward': {
+					'id': '001',
+					'label': 'Sage',
+					'category': 'Badges',
+					'icon': 'https://sageicons/sage.ico',
+					'points': '3',
+					'feeback': {
+						'audioUrl': 'https://someaudioclip.mp3',
+						'text': 'Hooray! You are a sage!',
+						'animationUrl': 'https://someanimation.gif',
+						'icon': 'https://someicon.ico'
+					}
+				}
+			},
+			{
+				'id': '002',
+				'minimumCorrectAnswers': 8,
+				'reward': {
+					'id': '002',
+					'label': 'Expert',
+					'category': 'XP',
+					'icon': 'https://sageicons/sage.ico',
+					'points': '3',
+					'feeback': {
+						'audioUrl': 'https://someaudioclip.mp3',
+						'text': 'Hooray! You are an Expert!',
+						'animationUrl': 'https://someanimation.gif',
+						'icon': 'https://someicon.ico'
+					}
+				}
+			}
+		],
+		'initialMenu': [
+			{
+				'name': 'Start Menu'
+			}
+		],
+		'gameFlow': {
+			'levels': [
+				{
+					'name': 'Addition and Subtraction',
+					'category': 'Addition and Subtraction (Year 3)',
+					'goals': [
+						{
+							'id': '003',
+							'minimumCorrectAnswers': 8,
+							'reward': {
+								'id': '003',
+								'label': 'Level Crusher',
+								'category': 'XP',
+								'icon': 'https://sageicons/sage.ico',
+								'points': '3',
+								'feeback': {
+									'audioUrl': 'https://someaudioclip.mp3',
+									'text': 'Hooray! You are a level crusher!',
+									'animationUrl': 'https://someanimation.gif',
+									'icon': 'https://someicon.ico'
+								}
+							}
+						}
+					],
+					'questions': [
+						{
+							'id': '001',
+							'question': 'Which will not total 100?',
+							'options': [
+								'65 + 35',
+								'55 + 45',
+								'75 + 35',
+								'85 + 15'
+							],
+							'correctAnswers': [
+								'75 + 35'
+							],
+							'feedback': {
+								'correctAnswer': {
+									'audioUrl': 'https://someaudioclip.mp3',
+									'text': 'Yaay! You nailed it!',
+									'animationUrl': 'https://someanimation.gif',
+									'icon': 'check-circle'
+								},
+								'wrongAnswer': {
+									'audioUrl': 'https://someaudioclip.mp3',
+									'text': 'Ooups! Better luck next time',
+									'animationUrl': 'https://someanimation.gif',
+									'icon': 'times-circle'
+								}
+							},
+							'reward': {
+								'id': '004',
+								'label': 'Question Titan',
+								'category': 'XP',
+								'icon': 'https://sageicons/sage.ico',
+								'points': 2,
+								'feeback': {
+									'audioUrl': 'https://someaudioclip.mp3',
+									'text': 'Hooray! You are a level crusher!',
+									'animationUrl': 'https://someanimation.gif',
+									'icon': 'https://someicon.ico'
+								}
+							},
+							'timer': 5
+						},
+						{
+							'id': '002',
+							'question': 'Which is a good strategy for adding 9?',
+							'options': [
+								'Add 20 and take away 11',
+								'Add 10 and take away 1',
+								'Take away 10 add 1',
+								'Take away 20 add 11'
+							],
+							'correctAnswers': [
+								'Add 10 and take away 1'
+							],
+							'feeback': {
+								'correctAnswer': {
+									'audioUrl': 'https://someaudioclip.mp3',
+									'text': 'Yaay! You nailed it!',
+									'animationUrl': 'https://someanimation.gif',
+									'icon': 'check-circle'
+								},
+								'wrongAnswer': {
+									'audioUrl': 'https://someaudioclip.mp3',
+									'text': 'Ooups! Better luck next time',
+									'animationUrl': 'https://someanimation.gif',
+									'icon': 'times-circle'
+								}
+							},
+							'reward': {
+								'id': '004',
+								'label': 'Sign spotter',
+								'category': 'XP',
+								'icon': 'https://sageicons/sage.ico',
+								'points': '3',
+								'feeback': {
+									'audioUrl': 'https://someaudioclip.mp3',
+									'text': 'Hooray! You are a sign spotter!',
+									'animationUrl': 'https://someanimation.gif',
+									'icon': 'https://someicon.ico'
+								}
+							},
+							'timer': 5
+						}
+					]
+				},
+				{
+					'name': 'Level 2',
+					'category': 'Cities',
+					'goals': [
+						{
+							'id': '005',
+							'minimumCorrectAnswers': 2,
+							'reward': {
+								'id': '005',
+								'label': 'Level Crusher',
+								'category': 'XP',
+								'icon': 'https://sageicons/sage.ico',
+								'points': '3',
+								'feeback': {
+									'audioUrl': 'https://someaudioclip.mp3',
+									'text': 'Hooray! You are a level crusher!',
+									'animationUrl': 'https://someanimation.gif',
+									'icon': 'https://someicon.ico'
+								}
+							}
+						}
+					],
+					'questions': [
+						{
+							'id': '001',
+							'question': 'What is the capital city of Uganda?',
+							'options': [
+								'Kampala',
+								'Mbarara',
+								'Kinshasha',
+								'Kabale'
+							],
+							'correctAnswers': [
+								'Kampala'
+							],
+							'feeback': {
+								'correctAnswer': {
+									'audioUrl': 'https://someaudioclip.mp3',
+									'text': 'Yaay! You nailed it!',
+									'animationUrl': 'https://someanimation.gif',
+									'icon': 'check-circle'
+								},
+								'wrongAnswer': {
+									'audioUrl': 'https://someaudioclip.mp3',
+									'text': 'Ooups! Better luck next time',
+									'animationUrl': 'https://someanimation.gif',
+									'icon': 'times-circle'
+								}
+							},
+							'reward': {
+								'id': '004',
+								'label': 'Question Titan',
+								'category': 'XP',
+								'icon': 'https://sageicons/sage.ico',
+								'points': '2',
+								'feeback': {
+									'audioUrl': 'https://someaudioclip.mp3',
+									'text': 'Hooray! You are a level crusher!',
+									'animationUrl': 'https://someanimation.gif',
+									'icon': 'https://someicon.ico'
+								}
+							},
+							'timer': null
+						},
+						{
+							'id': '006',
+							'question': 'Which is the highest mountain range in Uganda?',
+							'options': [
+								'Rwenzori',
+								'Mengo',
+								'Wati',
+								'Elgon'
+							],
+							'correctAnswers': [
+								'Rwenzori'
+							],
+							'points': 1,
+							'feeback': {
+								'correctAnswer': {
+									'audioUrl': 'https://someaudioclip.mp3',
+									'text': 'Yaay! You nailed it!',
+									'animationUrl': 'https://someanimation.gif',
+									'icon': 'check-circle'
+								},
+								'wrongAnswer': {
+									'audioUrl': 'https://someaudioclip.mp3',
+									'text': 'Ooups! Better luck next time',
+									'animationUrl': 'https://someanimation.gif',
+									'icon': 'times-circle'
+								}
+							},
+							'reward': {
+								'id': '004',
+								'label': 'Sign spotter',
+								'category': 'XP',
+								'icon': 'https://sageicons/sage.ico',
+								'points': '3',
+								'feeback': {
+									'audioUrl': 'https://someaudioclip.mp3',
+									'text': 'Hooray! You are a sign spotter!',
+									'animationUrl': 'https://someanimation.gif',
+									'icon': 'https://someicon.ico'
+								}
+							},
+							'timer': 3
+						}
+					]
+				}
+			]
+		}
+	}
