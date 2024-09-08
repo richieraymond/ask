@@ -1,268 +1,476 @@
-
 {
-		'gameIdentification': {
-			'gameId': '001',
-			'name': 'Education Quizzes',
-			'Locale': 'en-UG'
-		},
-		'goals': [
-			{
-				'id': '001',
-				'numberOfLevelsToComplete': 1,
-				'reward': {
-					'id': '001',
-					'label': 'Sage',
-					'category': 'Badges',
-					'icon': 'https://sageicons/sage.ico',
-					'points': '3',
-					'feeback': {
-						'audioUrl': 'https://someaudioclip.mp3',
-						'text': 'Hooray! You are a sage!',
-						'animationUrl': 'https://someanimation.gif',
-						'icon': 'https://someicon.ico'
-					}
-				}
-			},
-			{
-				'id': '002',
-				'minimumCorrectAnswers': 8,
-				'reward': {
-					'id': '002',
-					'label': 'Expert',
-					'category': 'XP',
-					'icon': 'https://sageicons/sage.ico',
-					'points': '3',
-					'feeback': {
-						'audioUrl': 'https://someaudioclip.mp3',
-						'text': 'Hooray! You are an Expert!',
-						'animationUrl': 'https://someanimation.gif',
-						'icon': 'https://someicon.ico'
-					}
-				}
-			}
-		],
-		'initialMenu': [
-			{
-				'name': 'Start Menu'
-			}
-		],
-		'gameFlow': {
-			'levels': [
-				{
-					'name': 'Addition and Subtraction',
-					'category': 'Addition and Subtraction (Year 3)',
-					'goals': [
-						{
-							'id': '003',
-							'minimumCorrectAnswers': 8,
-							'reward': {
-								'id': '003',
-								'label': 'Level Crusher',
-								'category': 'XP',
-								'icon': 'https://sageicons/sage.ico',
-								'points': '3',
-								'feeback': {
-									'audioUrl': 'https://someaudioclip.mp3',
-									'text': 'Hooray! You are a level crusher!',
-									'animationUrl': 'https://someanimation.gif',
-									'icon': 'https://someicon.ico'
-								}
-							}
-						}
-					],
-					'questions': [
-						{
-							'id': '001',
-							'question': 'Which will not total 100?',
-							'options': [
-								'65 + 35',
-								'55 + 45',
-								'75 + 35',
-								'85 + 15'
-							],
-							'correctAnswers': [
-								'75 + 35'
-							],
-							'feedback': {
-								'correctAnswer': {
-									'audioUrl': 'https://someaudioclip.mp3',
-									'text': 'Yaay! You nailed it!',
-									'animationUrl': 'https://someanimation.gif',
-									'icon': 'check-circle'
-								},
-								'wrongAnswer': {
-									'audioUrl': 'https://someaudioclip.mp3',
-									'text': 'Ooups! Better luck next time',
-									'animationUrl': 'https://someanimation.gif',
-									'icon': 'times-circle'
-								}
-							},
-							'reward': {
-								'id': '004',
-								'label': 'Question Titan',
-								'category': 'XP',
-								'icon': 'https://sageicons/sage.ico',
-								'points': 2,
-								'feeback': {
-									'audioUrl': 'https://someaudioclip.mp3',
-									'text': 'Hooray! You are a level crusher!',
-									'animationUrl': 'https://someanimation.gif',
-									'icon': 'https://someicon.ico'
-								}
-							},
-							'timer': 5
-						},
-						{
-							'id': '002',
-							'question': 'Which is a good strategy for adding 9?',
-							'options': [
-								'Add 20 and take away 11',
-								'Add 10 and take away 1',
-								'Take away 10 add 1',
-								'Take away 20 add 11'
-							],
-							'correctAnswers': [
-								'Add 10 and take away 1'
-							],
-							'feeback': {
-								'correctAnswer': {
-									'audioUrl': 'https://someaudioclip.mp3',
-									'text': 'Yaay! You nailed it!',
-									'animationUrl': 'https://someanimation.gif',
-									'icon': 'check-circle'
-								},
-								'wrongAnswer': {
-									'audioUrl': 'https://someaudioclip.mp3',
-									'text': 'Ooups! Better luck next time',
-									'animationUrl': 'https://someanimation.gif',
-									'icon': 'times-circle'
-								}
-							},
-							'reward': {
-								'id': '004',
-								'label': 'Sign spotter',
-								'category': 'XP',
-								'icon': 'https://sageicons/sage.ico',
-								'points': '3',
-								'feeback': {
-									'audioUrl': 'https://someaudioclip.mp3',
-									'text': 'Hooray! You are a sign spotter!',
-									'animationUrl': 'https://someanimation.gif',
-									'icon': 'https://someicon.ico'
-								}
-							},
-							'timer': 5
-						}
-					]
-				},
-				{
-					'name': 'Level 2',
-					'category': 'Cities',
-					'goals': [
-						{
-							'id': '005',
-							'minimumCorrectAnswers': 2,
-							'reward': {
-								'id': '005',
-								'label': 'Level Crusher',
-								'category': 'XP',
-								'icon': 'https://sageicons/sage.ico',
-								'points': '3',
-								'feeback': {
-									'audioUrl': 'https://someaudioclip.mp3',
-									'text': 'Hooray! You are a level crusher!',
-									'animationUrl': 'https://someanimation.gif',
-									'icon': 'https://someicon.ico'
-								}
-							}
-						}
-					],
-					'questions': [
-						{
-							'id': '001',
-							'question': 'What is the capital city of Uganda?',
-							'options': [
-								'Kampala',
-								'Mbarara',
-								'Kinshasha',
-								'Kabale'
-							],
-							'correctAnswers': [
-								'Kampala'
-							],
-							'feeback': {
-								'correctAnswer': {
-									'audioUrl': 'https://someaudioclip.mp3',
-									'text': 'Yaay! You nailed it!',
-									'animationUrl': 'https://someanimation.gif',
-									'icon': 'check-circle'
-								},
-								'wrongAnswer': {
-									'audioUrl': 'https://someaudioclip.mp3',
-									'text': 'Ooups! Better luck next time',
-									'animationUrl': 'https://someanimation.gif',
-									'icon': 'times-circle'
-								}
-							},
-							'reward': {
-								'id': '004',
-								'label': 'Question Titan',
-								'category': 'XP',
-								'icon': 'https://sageicons/sage.ico',
-								'points': '2',
-								'feeback': {
-									'audioUrl': 'https://someaudioclip.mp3',
-									'text': 'Hooray! You are a level crusher!',
-									'animationUrl': 'https://someanimation.gif',
-									'icon': 'https://someicon.ico'
-								}
-							},
-							'timer': null
-						},
-						{
-							'id': '006',
-							'question': 'Which is the highest mountain range in Uganda?',
-							'options': [
-								'Rwenzori',
-								'Mengo',
-								'Wati',
-								'Elgon'
-							],
-							'correctAnswers': [
-								'Rwenzori'
-							],
-							'points': 1,
-							'feeback': {
-								'correctAnswer': {
-									'audioUrl': 'https://someaudioclip.mp3',
-									'text': 'Yaay! You nailed it!',
-									'animationUrl': 'https://someanimation.gif',
-									'icon': 'check-circle'
-								},
-								'wrongAnswer': {
-									'audioUrl': 'https://someaudioclip.mp3',
-									'text': 'Ooups! Better luck next time',
-									'animationUrl': 'https://someanimation.gif',
-									'icon': 'times-circle'
-								}
-							},
-							'reward': {
-								'id': '004',
-								'label': 'Sign spotter',
-								'category': 'XP',
-								'icon': 'https://sageicons/sage.ico',
-								'points': '3',
-								'feeback': {
-									'audioUrl': 'https://someaudioclip.mp3',
-									'text': 'Hooray! You are a sign spotter!',
-									'animationUrl': 'https://someanimation.gif',
-									'icon': 'https://someicon.ico'
-								}
-							},
-							'timer': 3
-						}
-					]
-				}
-			]
-		}
-	}
+    "gameIdentification": {
+        "gameId": null,
+        "name": "Addition and Subtraction (Year 3)",
+        "locale": "en-UG"
+    },
+    "goals": [
+        {
+            "numberOfLevelsToComplete": 1,
+            "reward": {
+                "label": "Level Crusher",
+                "category": null,
+                "icon": "fa-trophy",
+                "points": "4",
+                "feeback": {
+                    "audioUrl": null,
+                    "text": null,
+                    "animationUrl": null,
+                    "icon": null
+                }
+            }
+        }
+    ],
+    "gameFlow": {
+        "levels": [
+            {
+                "name": "Addition and Subtraction (Year 3)",
+                "category": "Mathematics",
+                "goals": [
+                    {
+                        "minimumCorrectAnswers": 3,
+                        "reward": {
+                            "label": "Question Conqueror",
+                            "category": null,
+                            "icon": "fa-question-circle",
+                            "points": "4",
+                            "feeback": {
+                                "audioUrl": null,
+                                "text": null,
+                                "animationUrl": null,
+                                "icon": null
+                            }
+                        }
+                    }
+                ],
+                "questions": [
+                    {
+                        "question": "17 take away 8",
+                        "options": [
+                            "9",
+                            "10",
+                            "11",
+                            "12"
+                        ],
+                        "correctAnswers": [
+                            0
+                        ],
+                        "correctResponseFeedback": {
+                            "audioUrl": null,
+                            "text": "Awesome",
+                            "animationUrl": null,
+                            "icon": "fa-check"
+                        },
+                        "wrongResponseFeedback": {
+                            "audioUrl": null,
+                            "text": "Oops, better luck next time",
+                            "animationUrl": null,
+                            "icon": "fa-times"
+                        },
+                        "reward": {
+                            "label": null,
+                            "category": null,
+                            "icon": null,
+                            "points": "5",
+                            "feeback": {
+                                "audioUrl": null,
+                                "text": null,
+                                "animationUrl": null,
+                                "icon": null
+                            }
+                        },
+                        "timer": 5
+                    },
+                    {
+                        "question": "What is 78 + 56?",
+                        "options": [
+                            "134",
+                            "138",
+                            "124",
+                            "128"
+                        ],
+                        "correctAnswers": [
+                            0
+                        ],
+                        "correctResponseFeedback": {
+                            "audioUrl": null,
+                            "text": "Nice!",
+                            "animationUrl": null,
+                            "icon": "fa-check"
+                        },
+                        "wrongResponseFeedback": {
+                            "audioUrl": null,
+                            "text": "Oops!",
+                            "animationUrl": null,
+                            "icon": "fa-times"
+                        },
+                        "reward": {
+                            "label": null,
+                            "category": null,
+                            "icon": "fa-car",
+                            "points": "4",
+                            "feeback": {
+                                "audioUrl": null,
+                                "text": null,
+                                "animationUrl": null,
+                                "icon": null
+                            }
+                        },
+                        "timer": ""
+                    },
+                    {
+                        "question": "75 subtract 40.",
+                        "options": [
+                            "30",
+                            "35",
+                            "40",
+                            "45"
+                        ],
+                        "correctAnswers": [
+                            1
+                        ],
+                        "correctResponseFeedback": {
+                            "audioUrl": null,
+                            "text": "Nailing it!",
+                            "animationUrl": null,
+                            "icon": "fa-check"
+                        },
+                        "wrongResponseFeedback": {
+                            "audioUrl": null,
+                            "text": "Better luck next time!",
+                            "animationUrl": null,
+                            "icon": "fa-times"
+                        },
+                        "reward": {
+                            "label": null,
+                            "category": null,
+                            "icon": null,
+                            "points": "1",
+                            "feeback": {
+                                "audioUrl": null,
+                                "text": null,
+                                "animationUrl": null,
+                                "icon": null
+                            }
+                        },
+                        "timer": 3
+                    },
+                    {
+                        "question": "Which is a good strategy for adding 9?",
+                        "options": [
+                            "Add 20 take away 11",
+                            "Add 20 take away 1",
+                            "Add 10 take away 1",
+                            "Take away 20 add 11"
+                        ],
+                        "correctAnswers": [
+                            2
+                        ],
+                        "correctResponseFeedback": {
+                            "audioUrl": null,
+                            "text": "Genius!",
+                            "animationUrl": null,
+                            "icon": "fa-lightbulb-o"
+                        },
+                        "wrongResponseFeedback": {
+                            "audioUrl": null,
+                            "text": "Oh no!",
+                            "animationUrl": null,
+                            "icon": "fa-times"
+                        },
+                        "reward": {
+                            "label": null,
+                            "category": null,
+                            "icon": "fa-lightbulb-o",
+                            "points": "3",
+                            "feeback": {
+                                "audioUrl": null,
+                                "text": null,
+                                "animationUrl": null,
+                                "icon": null
+                            }
+                        },
+                        "timer": ""
+                    },
+                    {
+                        "question": "Which will not total 100?",
+                        "options": [
+                            "65 + 35",
+                            "55 + 45",
+                            "75 + 35",
+                            "85 + 15"
+                        ],
+                        "correctAnswers": [
+                            2
+                        ],
+                        "correctResponseFeedback": {
+                            "audioUrl": null,
+                            "text": null,
+                            "animationUrl": null,
+                            "icon": null
+                        },
+                        "wrongResponseFeedback": {
+                            "audioUrl": null,
+                            "text": null,
+                            "animationUrl": null,
+                            "icon": null
+                        },
+                        "reward": {
+                            "label": null,
+                            "category": null,
+                            "icon": null,
+                            "points": null,
+                            "feeback": {
+                                "audioUrl": null,
+                                "text": null,
+                                "animationUrl": null,
+                                "icon": null
+                            }
+                        },
+                        "timer": ""
+                    },
+                    {
+                        "question": "What is the sum of 14 and 8?",
+                        "options": [
+                            "18",
+                            "20",
+                            "21",
+                            "22"
+                        ],
+                        "correctAnswers": [
+                            3
+                        ],
+                        "correctResponseFeedback": {
+                            "audioUrl": null,
+                            "text": null,
+                            "animationUrl": null,
+                            "icon": null
+                        },
+                        "wrongResponseFeedback": {
+                            "audioUrl": null,
+                            "text": null,
+                            "animationUrl": null,
+                            "icon": null
+                        },
+                        "reward": {
+                            "label": null,
+                            "category": null,
+                            "icon": null,
+                            "points": "1",
+                            "feeback": {
+                                "audioUrl": null,
+                                "text": null,
+                                "animationUrl": null,
+                                "icon": null
+                            }
+                        },
+                        "timer": ""
+                    },
+                    {
+                        "question": "Which is the missing number: 7 + __ = 20?",
+                        "options": [
+                            "10",
+                            "12",
+                            "13",
+                            "14"
+                        ],
+                        "correctAnswers": [
+                            2
+                        ],
+                        "correctResponseFeedback": {
+                            "audioUrl": null,
+                            "text": null,
+                            "animationUrl": null,
+                            "icon": null
+                        },
+                        "wrongResponseFeedback": {
+                            "audioUrl": null,
+                            "text": null,
+                            "animationUrl": null,
+                            "icon": null
+                        },
+                        "reward": {
+                            "label": null,
+                            "category": null,
+                            "icon": null,
+                            "points": "1",
+                            "feeback": {
+                                "audioUrl": null,
+                                "text": null,
+                                "animationUrl": null,
+                                "icon": null
+                            }
+                        },
+                        "timer": ""
+                    },
+                    {
+                        "question": "Which number sentence is incorrect?",
+                        "options": [
+                            "8 + 5 = 13",
+                            "13 - 5 = 8",
+                            "5 + 8 = 13",
+                            "8 - 5 = 13"
+                        ],
+                        "correctAnswers": [
+                            3
+                        ],
+                        "correctResponseFeedback": {
+                            "audioUrl": null,
+                            "text": "Amazing!",
+                            "animationUrl": null,
+                            "icon": null
+                        },
+                        "wrongResponseFeedback": {
+                            "audioUrl": null,
+                            "text": "Let's try something else",
+                            "animationUrl": null,
+                            "icon": null
+                        },
+                        "reward": {
+                            "label": null,
+                            "category": null,
+                            "icon": null,
+                            "points": null,
+                            "feeback": {
+                                "audioUrl": null,
+                                "text": null,
+                                "animationUrl": null,
+                                "icon": null
+                            }
+                        },
+                        "timer": 3
+                    },
+                    {
+                        "question": "Add 8, 9 and 4.",
+                        "options": [
+                            "17",
+                            "20",
+                            "21",
+                            "25"
+                        ],
+                        "correctAnswers": [
+                            2
+                        ],
+                        "correctResponseFeedback": {
+                            "audioUrl": null,
+                            "text": "Awesome, one more to go",
+                            "animationUrl": null,
+                            "icon": null
+                        },
+                        "wrongResponseFeedback": {
+                            "audioUrl": null,
+                            "text": "One last chance",
+                            "animationUrl": null,
+                            "icon": null
+                        },
+                        "reward": {
+                            "label": null,
+                            "category": null,
+                            "icon": null,
+                            "points": "2",
+                            "feeback": {
+                                "audioUrl": null,
+                                "text": null,
+                                "animationUrl": null,
+                                "icon": null
+                            }
+                        },
+                        "timer": 5
+                    },
+                    {
+                        "question": "Which is the best method of calculating 45 + 46?",
+                        "options": [
+                            "Double 45 add 1",
+                            "Add the tens first then the ones",
+                            "Count on from 45",
+                            "Add the ones first the the tens"
+                        ],
+                        "correctAnswers": [
+                            0
+                        ],
+                        "correctResponseFeedback": {
+                            "audioUrl": null,
+                            "text": "Nailed the last one!",
+                            "animationUrl": null,
+                            "icon": null
+                        },
+                        "wrongResponseFeedback": {
+                            "audioUrl": null,
+                            "text": "Let's practice again",
+                            "animationUrl": null,
+                            "icon": null
+                        },
+                        "reward": {
+                            "label": null,
+                            "category": null,
+                            "icon": null,
+                            "points": "5",
+                            "feeback": {
+                                "audioUrl": null,
+                                "text": null,
+                                "animationUrl": null,
+                                "icon": null
+                            }
+                        },
+                        "timer": 3
+                    }
+                ]
+            },
+            {
+                "name": null,
+                "category": null,
+                "goals": [
+                    {
+                        "minimumCorrectAnswers": null,
+                        "reward": {
+                            "label": null,
+                            "category": null,
+                            "icon": null,
+                            "points": null,
+                            "feeback": {
+                                "audioUrl": null,
+                                "text": null,
+                                "animationUrl": null,
+                                "icon": null
+                            }
+                        }
+                    }
+                ],
+                "questions": [
+                    {
+                        "question": null,
+                        "options": [
+                            ""
+                        ],
+                        "correctAnswers": [],
+                        "correctResponseFeedback": {
+                            "audioUrl": null,
+                            "text": null,
+                            "animationUrl": null,
+                            "icon": null
+                        },
+                        "wrongResponseFeedback": {
+                            "audioUrl": null,
+                            "text": null,
+                            "animationUrl": null,
+                            "icon": null
+                        },
+                        "reward": {
+                            "label": null,
+                            "category": null,
+                            "icon": null,
+                            "points": null,
+                            "feeback": {
+                                "audioUrl": null,
+                                "text": null,
+                                "animationUrl": null,
+                                "icon": null
+                            }
+                        },
+                        "timer": ""
+                    }
+                ]
+            }
+        ]
+    }
+}
